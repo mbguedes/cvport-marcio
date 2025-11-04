@@ -104,6 +104,7 @@
     align-items: center;
     gap: 2rem;
     margin-bottom: 3rem;
+    
 }
 
 .foto-container {
@@ -116,7 +117,6 @@
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    /* Garante que a foto não fique distorcida */
     border: 2px solid var(--cor-destaque);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
@@ -134,8 +134,8 @@
 
 .subtitulo {
     /* Usando a fonte do tema, mas um pouco menor */
-    font-family: "Press Start 2P", system-ui;
-    font-size: 1rem;
+    font-family: "Lexend", system-ui;
+    font-size: 1.2rem;
     color: var(--cor-texto);
     opacity: 0.8;
     margin-top: -1.5rem;
@@ -172,7 +172,7 @@
 }
 
 .item-experiencia h3 {
-    font-family: "Press Start 2P", system-ui;
+    font-family: "Lexend", system-ui;
     font-size: 1rem;
     color: var(--cor-texto);
 }
