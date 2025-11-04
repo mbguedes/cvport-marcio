@@ -115,7 +115,7 @@ onBeforeUnmount(() => {
 }
 
 .sidebar .social a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .sidebar .social a:hover,
@@ -155,7 +155,7 @@ onBeforeUnmount(() => {
 .menu-toggle {
     background: var(--cor-destaque)); /* Fundo para destacar */
     border: 1px solid var(--cor-hover-fundo);
-    color: var(--cor-texto); /* Usa cor do texto principal */
+    color: black;
     font-size: 1.5rem;
     position: fixed;
     top: 1rem;
