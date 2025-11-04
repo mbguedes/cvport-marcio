@@ -1,0 +1,39 @@
+/* Definindo as fontes */
+:root {
+    --font-title: "Bitcount Grid Single", system-ui;
+    --font-body: "Press Start 2P", system-ui;
+}
+
+/* Tema Claro (Padrão) */
+:root {
+    --color-background: #f0f0f0;
+    --color-text: #2c3e50;
+    --color-primary: #4800ae;
+    --color-sidebar-bg: #ffffff;
+    --color-sidebar-text: #2c3e50;
+}
+
+/* Tema Escuro */
+[data-theme='dark'] {
+    --color-background: #1a1a1a;
+    --color-text: #e0e0e0;
+    --color-primary: #9d4edd;
+    --color-sidebar-bg: #101010;
+    --color-sidebar-text: #e0e0e0;
+}
+
+/* Estilos globais */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+}
+
+a {
+    color: var(--color-primary);
+}

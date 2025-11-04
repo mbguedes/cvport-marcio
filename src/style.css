@@ -1,0 +1,64 @@
+/* src/style.css */
+
+/* 1. Importar ícones do Bootstrap */
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* 2. Definição das variáveis de Tema (COM LÓGICA INVERTIDA) */
+:root {
+  /* Tema Claro (Padrão) */
+  /* Página fica CLARA */
+  --cor-fundo: #f0f2f5;
+  --cor-texto: #222222;
+  --cor-destaque: #4800ae;
+  --cor-hover-fundo: #e9e9e9;
+
+  /* Sidebar fica ESCURA */
+  --cor-sidebar-fundo: #1e1e1e;
+  --cor-sidebar-texto: #f0f0f0;
+}
+
+html.dark {
+  /* Tema Escuro */
+  /* Página fica ESCURA */
+  --cor-fundo: #121212;
+  --cor-texto: #eeeeee;
+  --cor-destaque: #9e46ff;
+  --cor-hover-fundo: #2a2a2a;
+
+  /* Sidebar fica CLARA */
+  --cor-sidebar-fundo: #ffffff;
+  --cor-sidebar-texto: #333;
+}
+
+/* 3. Estilos Base e Fontes (Usando suas fontes) */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  /* Sua fonte pedida para o corpo */
+  font-family: "Press Start 2P", system-ui, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.6;
+
+  /* Melhora a renderização de fontes pixeladas */
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  image-rendering: pixelated;
+}
+
+/* 4. Classe para o Título Principal (Sua outra fonte) */
+.titulo-principal {
+  font-family: "Bitcount Grid Single", monospace;
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--cor-destaque);
+}
+
+/* 5. Estilos gerais de link */
+a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+}
