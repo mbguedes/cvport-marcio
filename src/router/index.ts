@@ -1,10 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router'
 import Sobre from '../views/Sobre.vue'
 import Projetos from '../views/Projetos.vue'
 
-const router = createRouter({
-history: createWebHistory(),
-routes: [
+const routes = [
     {
         path: '/',
         name: 'Sobre',
@@ -15,7 +13,13 @@ routes: [
         name: 'Projetos',
         component: Projetos
     }
-    ]
-});
+]
 
-export default router;
+const router = createRouter({
+    // Esta linha usa a variável de ambiente BASE_URL, que corrige
+    // tanto o deploy quanto o seu localhost (que agora roda em /cvport-marcio/)
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes
+})
+
+export default router
