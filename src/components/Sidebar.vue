@@ -7,8 +7,8 @@
         <aside :class="['sidebar', { 'open': isOpen || isDesktop}]">
             <nav>
                 <ul class="direcao">
-                    <li><router-link to="/" @click="closeMenu">Sobre</router-link></li>
-                    <li><router-link to="/Projetos" @click="closeMenu">Projetos</router-link></li>
+                    <li><router-link to="/" @click="closeMenu">SOBRE</router-link></li>
+                    <li><router-link to="/Projetos" @click="closeMenu">PROJETOS</router-link></li>
                 </ul>
 
                 <div class="theme-toggle-container">
@@ -153,7 +153,7 @@ onBeforeUnmount(() => {
 
 
 .menu-toggle {
-    background: var(--cor-destaque)); /* Fundo para destacar */
+    background: var(--cor-destaque));
     border: 1px solid var(--cor-hover-fundo);
     color: black;
     font-size: 1.5rem;
