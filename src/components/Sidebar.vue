@@ -153,7 +153,7 @@ onBeforeUnmount(() => {
 
 
 .menu-toggle {
-    background: yellow; /* Fundo para destacar */
+    background: var(--cor-destaque)); /* Fundo para destacar */
     border: 1px solid var(--cor-hover-fundo);
     color: var(--cor-texto); /* Usa cor do texto principal */
     font-size: 1.5rem;
